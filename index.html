@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products App</title>
+    <!-- CDN BOOTSWATCH -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="/" class="navbar-brand" style="margin-left: 20px">
+        Products App
+    </a>
+    </nav>
+
+    <div class="container" style="margin-right: 30%;">
+        <!-- APPLICATION -->
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+             <div class="card">
+                <div class="card-header">
+                    <h4>Add a product</h4>
+                </div>
+                    <form id="product-form" class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Product Name" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="number" step="0.01" id="price" placeholder="Product Price" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="number" id="year" value="2021" min="2016" max="2021" placeholder="Year of production" class="form-control">
+                        </div>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <input type="submit" value="Save" class="btn btn-primary btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-6" id="product-list"></div>
+
+        </div>
+    </div>
+        
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
